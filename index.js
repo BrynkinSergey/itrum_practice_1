@@ -18,6 +18,14 @@ const setHeaderStyle = (style) => {
     logo.src = "src/imgs/logo_mobile_blue.svg";
     menu.src = "src/imgs/icon_menu_mobile_gray.svg";
   }
+
+  if (style === "modal") {
+    header.classList.remove("bg-color-blue1");
+    header.classList.add("bg-color-white");
+
+    logo.src = "src/imgs/logo_mobile_blue.svg";
+    menu.src = "src/imgs/icon_menu_mobile_close.svg";
+  }
 };
 
 const scrollHandler = () => {
@@ -32,13 +40,13 @@ const clickMenuButtonHandler = () => {
   const modal = document.querySelector(".modal-menu");
 
   if (modal.style.display === "none") {
-    modal.style.setProperty("display", "block");
-    setHeaderStyle("white");
     window.removeEventListener("scroll", scrollHandler);
+    modal.style.setProperty("display", "block");
+    setHeaderStyle("modal");
   } else {
-    modal.style.setProperty("display", "none");
-    setHeaderStyle("blue");
     window.addEventListener("scroll", scrollHandler);
+    modal.style.setProperty("display", "none");
+    scrollHandler();
   }
 };
 
