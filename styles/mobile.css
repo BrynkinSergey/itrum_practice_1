@@ -102,7 +102,7 @@ h1 {
   flex-shrink: 0;
 }
 
-.promo_buttons-container {
+.promo_buttons-section {
   position: absolute;
   display: flex;
   bottom: -20px;
@@ -117,22 +117,20 @@ h1 {
   padding: 0;
 }
 
-.call-button {
+.standard-button {
   height: 40px;
   width: 40px;
-  background-image: url(/src/imgs/icon_phone_btn.svg);
 }
 
+.phone-button {
+  background-image: url(/src/imgs/buttons/icon-phone-btn.svg);
+}
 .mail-button {
-  height: 40px;
-  width: 40px;
-  background-image: url(/src/imgs/icon_mail_btn.svg);
+  background-image: url(/src/imgs/buttons/icon-mail-btn.svg);
 }
-
 .auth-button {
-  height: 40px;
   width: 190px;
-  background-image: url(/src/imgs/Покой.svg);
+  background-image: url(/src/imgs/buttons/icon-atuh-btn.svg);
 }
 
 .promo-text-section {
