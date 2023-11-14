@@ -41,7 +41,7 @@ const clickMenuButtonHandler = () => {
 
   if (modal.style.display === "none") {
     window.removeEventListener("scroll", scrollHandler);
-    modal.style.setProperty("display", "block");
+    modal.style.setProperty("display", "flex");
     setHeaderStyle("modal");
   } else {
     window.addEventListener("scroll", scrollHandler);

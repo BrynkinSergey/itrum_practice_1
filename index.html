@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link href="https://fonts.cdnfonts.com/css/blogger-sans" rel="stylesheet" />
     <title>Погнали</title>
     <script src="/index.js"></script>
   </head>
   <body>
     <div class="root">
-      <header class="header bg-color-blue1">
+      <header class="header bg-color-blue1 font-size-xl">
         <div class="header-content">
           <img class="main-logo" src="src/imgs/logo_mobile_white.svg" />
           <img
@@ -21,14 +22,48 @@
             onclick="clickMenuButtonHandler()" />
         </div>
       </header>
-      <section class="modal-menu"></section>
+      <section class="modal-menu">
+        <div class="modal-menu_content">
+          <h2
+            class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl">
+            О сервисе Направления Попутчики
+          </h2>
+          <button
+            class="button standard-button auth-button--large button-width-270 button-height-50"></button>
+          <div class="modal-menu_contact-sections-wrapper">
+            <section class="modal-menu_contact-section">
+              <img
+                class="modal-menu_contact-logo"
+                src="src/imgs/contacts_icon_phone.svg" />
+              <p
+                class="font-color-blue2 font-family-standard font-weight-700 font-size-xs">
+                8 800 555-86-28
+              </p>
+            </section>
+            <section class="modal-menu_contact-section">
+              <img
+                class="modal-menu_contact-logo"
+                src="src/imgs/contacts_icon_mail.svg" />
+              <p
+                class="font-color-blue2 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
+                mail@htmlacademy.ru
+              </p>
+            </section>
+          </div>
+          <section class="modal-menu_socials">
+            <img src="src/imgs/icon_facebook.svg" />
+            <img src="src/imgs/icon_vkontakte.svg" />
+            <img src="src/imgs/icon_instagram.svg" />
+          </section>
+        </div>
+      </section>
       <main>
         <section class="promo">
           <div class="promo-content-1 bg-color-blue1">
             <div class="main-promo_bg">
               <section class="main-promo-section">
                 <h1
-                  class="promo_main-caption font-color-white font-family-standard font-size-xl font-weight-bold">
+                  class="promo_main-caption font-color-white font-family-standard font-size-2xl font-weight-700">
                   В путешествие с крутыми попутчиками!
                 </h1>
                 <img src="/src/imgs/traveller-illustration-mobile 1.png" />
@@ -38,18 +73,19 @@
             <section class="promo_buttons-section">
               <button class="button standard-button phone-button"></button>
               <button class="button standard-button mail-button"></button>
-              <button class="button standard-button auth-button"></button>
+              <button
+                class="button standard-button auth-button button-width-190"></button>
             </section>
           </div>
           <div class="promo-content-2">
             <section class="promo-text-section">
               <p
-                class="font-color-white font-family-standard font-weight-lite font-size-sm">
+                class="font-color-white font-family-standard font-weight-300 font-size-sm">
                 «Лучшее приложение,<br />
                 что я видел в жизни!»
               </p>
               <p
-                class="font-color-white font-family-standard font-weight-bold font-size-sm">
+                class="font-color-white font-family-standard font-weight-700 font-size-sm">
                 Мурат Эльтазин<br />
                 главный редактор газеты «гаджетлайф»
               </p>
@@ -59,45 +95,45 @@
             <section class="flow-section">
               <div class="flow-section_step">
                 <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
                   Выберите<br />
                   направление
                 </p>
                 <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
                   1
                 </p>
               </div>
               <div class="flow-section_step">
                 <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
                   Изучите идеи<br />
                   путешественников
                 </p>
                 <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
                   2
                 </p>
               </div>
               <div class="flow-section_step">
                 <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
                   Находите тех,<br />
                   кто похож на вас
                 </p>
                 <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
                   3
                 </p>
               </div>
               <div class="flow-section_step">
                 <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
                   Путешествуйте<br />
                   вместе!
                 </p>
                 <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-bold font-size-md">
+                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
                   4
                 </p>
               </div>
@@ -106,17 +142,17 @@
             <section class="about-service-section">
               <div class="about-service-section_content-wrapper">
                 <h2
-                  class="font-family-standard font-size-lg font-weight-bold font-color-orange">
+                  class="font-family-standard font-size-lg font-weight-700 font-color-orange">
                   О сервисе
                 </h2>
                 <p
-                  class="font-family-standard font-size-sm font-weight-lite font-color-white">
+                  class="font-family-standard font-size-sm font-weight-300 font-color-white">
                   Любое путешествие веселее с попутчиками, которые на одной
                   волне с тобой! Делитесь своими идеями путешествий и черпайте
                   вдохновение в чужих.
                 </p>
                 <p
-                  class="font-family-standard font-size-sm font-weight-bold font-color-white">
+                  class="font-family-standard font-size-sm font-weight-700 font-color-white">
                   А если найдете кого-то близкого по духу — скорее зовите в
                   совместный трип!
                 </p>

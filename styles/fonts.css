@@ -6,6 +6,10 @@
 
 /* font sizes */
 
+.font-size-xs {
+  font-size: 16px;
+  line-height: 18px;
+}
 .font-size-sm {
   font-size: 16px;
   line-height: 22px;
@@ -19,16 +23,23 @@
   line-height: 24px;
 }
 .font-size-xl {
+  font-size: 30px;
+  line-height: 35px;
+}
+.font-size-2xl {
   font-size: 36px;
   line-height: 40px;
 }
 
 /* font weights */
 
-.font-weight-lite {
+.font-weight-300 {
   font-weight: 300;
 }
-.font-weight-bold {
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-700 {
   font-weight: 700;
 }
 
@@ -42,6 +53,16 @@
   color: #161c35;
 }
 
+.font-color-blue2 {
+  color: #192144;
+}
+
 .font-color-white {
   color: #fff;
+}
+
+/* text transform */
+
+.text-transform-uppercase {
+  text-transform: uppercase;
 }
