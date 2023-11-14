@@ -18,6 +18,10 @@
   font-size: 24px;
   line-height: 24px;
 }
+.font-size-xl {
+  font-size: 36px;
+  line-height: 40px;
+}
 
 /* font weights */
 

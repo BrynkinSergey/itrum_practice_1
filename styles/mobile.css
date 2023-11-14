@@ -61,7 +61,6 @@ main {
   padding: 94px 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -89,17 +88,13 @@ main {
   flex-grow: 1;
 }
 
-h1 {
-  color: #fff;
-  text-align: center;
-  font-family: "Blogger Sans", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
+.main-promo-section {
+  height: 385px;
   width: 238px;
-  height: 118px;
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .promo_buttons-section {
