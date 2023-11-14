@@ -17,7 +17,7 @@
 
   z-index: 5;
 
-  max-width: 1320px;
+  /* max-width: 1320px; */
   width: 100%;
   height: 53px;
   padding: 19px 25px;
@@ -54,7 +54,6 @@ main {
 .promo {
   width: 100%;
   height: 477px;
-  background-image: url(/src/imgs/globe-back-mobile\ 1.png);
 }
 
 .promo-content-1 {
@@ -72,8 +71,8 @@ main {
   height: 285px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 48px 0 0 0;
+  align-items: center;
+  padding-top: 48px;
 
   flex-shrink: 0;
   background: #161c35;
@@ -93,11 +92,19 @@ main {
 
 .main-promo-section {
   height: 385px;
-  width: 238px;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
+}
+
+.promo_main-caption {
+  width: 238px;
+}
+
+.main-promo_bg {
+  background-image: url(/src/imgs/globe-back-mobile\ 1.png);
 }
 
 .promo_buttons-section {
@@ -132,7 +139,7 @@ main {
 }
 
 .promo-text-section {
-  padding-left: 50px;
+  left: 30px;
   width: 210px;
   height: 128px;
   display: flex;
