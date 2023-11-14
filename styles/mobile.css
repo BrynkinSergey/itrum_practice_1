@@ -15,7 +15,6 @@
 .header {
   position: fixed;
 
-  background-color: #161c35;
   z-index: 5;
 
   max-width: 1320px;
@@ -34,6 +33,10 @@
 
 main {
   width: 100%;
+}
+
+.bg-color-white {
+  background-color: #fff;
 }
 
 .bg-color-blue1 {
