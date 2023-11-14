@@ -1,0 +1,43 @@
+/* font families */
+.font-family-standard {
+  font-family: Blogger Sans;
+  font-style: normal;
+}
+
+/* font sizes */
+
+.font-size-sm {
+  font-size: 16px;
+  line-height: 22px;
+}
+.font-size-md {
+  font-size: 18px;
+  line-height: 18px;
+}
+.font-size-lg {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* font weights */
+
+.font-weight-lite {
+  font-weight: 300;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+
+/* font colors */
+
+.font-color-orange {
+  color: #ff8d30;
+}
+
+.font-color-blue {
+  color: #161c35;
+}
+
+.font-color-white {
+  color: #fff;
+}
