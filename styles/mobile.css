@@ -103,9 +103,9 @@ h1 {
 }
 
 .promo_buttons-section {
-  position: absolute;
+  position: relative;
   display: flex;
-  bottom: -20px;
+  bottom: 20px;
   width: 270px;
   height: 40px;
 }
