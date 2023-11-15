@@ -12,16 +12,8 @@
   align-items: center;
 }
 
-@media (max-width: 767px) {
-  .main-content {
-    padding-top: 73px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-content {
-    padding-top: 132px;
-  }
+.main-content {
+  padding-top: 73px;
 }
 
 /* header */
@@ -29,6 +21,8 @@
 .header {
   position: fixed;
   top: 0;
+  height: 73px;
+  padding: 0 25px;
 
   z-index: 5;
 
@@ -37,55 +31,21 @@
   /* padding: 0 25px; */
 }
 
-@media (max-width: 767px) {
-  .header {
-    height: 73px;
-    padding: 0 25px;
-  }
-
-  .header_auth-button {
-    display: none;
-  }
-
-  .main-logo--mobile {
-    height: 15px;
-    width: 96px;
-  }
-
-  .main-logo--tablet {
-    display: none;
-  }
-  .bg-color-blue {
-    background-color: #161c35;
-  }
+.header_auth-button {
+  display: none;
 }
 
-@media (min-width: 768px) {
-  .header {
-    height: 132px;
-    padding: 0 40px;
-  }
+.main-logo--mobile {
+  height: 15px;
+  width: 96px;
+}
 
-  .header_auth-button {
-    display: block;
-    justify-self: flex-end;
-  }
+.main-logo--tablet {
+  display: none;
+}
 
-  .header_logo {
-    width: 190px;
-  }
-
-  .main-logo--mobile {
-    display: none;
-  }
-
-  .header_main-logo-wrapper {
-    background-image: url(/src/imgs/header/logo_tablet.svg);
-  }
-
-  .bg-color-blue {
-    background-color: #182044;
-  }
+.bg-color-blue {
+  background-color: #161c35;
 }
 
 .header-content {
@@ -192,6 +152,11 @@ main {
   align-items: center;
 }
 
+.promo-section_el-1 {
+  width: 238px;
+  margin-top: 41px;
+}
+
 .promo-section_el-2 {
   margin-top: 295px;
   display: flex;
@@ -206,6 +171,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.promo-section_el-4 {
+  margin-top: 29px;
+  width: 270px;
+  height: 320px;
 }
 
 .promo-section_el-5 {
@@ -235,12 +206,16 @@ main {
 }
 .flow-section_step:nth-child(2) {
   background-color: #ffa530;
+  top: -80px;
 }
 .flow-section_step:nth-child(3) {
   background-color: #ffbd30;
+  top: -160px;
 }
 .flow-section_step:nth-child(4) {
   background-color: #ffd74b;
+  top: -240px;
+  height: 80px;
 }
 
 .flow-section_text {
@@ -256,34 +231,46 @@ main {
   line-height: 18px;
 }
 
-@media (max-width: 767px) {
-  .promo-section_background-tablet-image-1 {
+@media (min-width: 768px) and (max-width: 1439px) {
+  .main-content {
+    padding-top: 132px;
+  }
+
+  /* header */
+  .header {
+    height: 132px;
+    padding: 0 40px;
+  }
+
+  .header_auth-button {
+    display: block;
+    justify-self: flex-end;
+  }
+
+  .header_logo {
+    width: 190px;
+  }
+
+  .main-logo--mobile {
     display: none;
   }
-  .promo-section_el-1 {
-    width: 238px;
-    margin-top: 41px;
+
+  .main-logo--tablet {
+    display: block;
   }
 
-  .promo-section_el-4 {
-    margin-top: 29px;
-    width: 270px;
-    height: 320px;
+  .header_main-logo-wrapper {
+    background-image: url(/src/imgs/header/logo_tablet.svg);
   }
 
-  .flow-section_step:nth-child(2) {
-    top: -80px;
+  .bg-color-blue {
+    background-color: #182044;
   }
-  .flow-section_step:nth-child(3) {
-    top: -160px;
-  }
-  .flow-section_step:nth-child(4) {
-    top: -240px;
-    height: 80px;
-  }
-}
 
-@media (min-width: 768px) {
+  /* promo section */
+  .promo-section_background-tablet-image-1 {
+    display: block;
+  }
   .mobile-background {
     display: none;
   }
@@ -301,7 +288,15 @@ main {
   }
 
   .promo-section_background-tablet-image-1 {
+    display: none;
     margin-top: 250px;
+  }
+
+  .promo-section_background-tablet-image-1 {
+    display: block;
+  }
+
+  .promo-section_background-tablet-image-2 {
     display: block;
   }
 
@@ -311,6 +306,7 @@ main {
   }
 
   .promo-section_background-tablet-traveller-image {
+    display: block;
     position: absolute;
     top: 272px;
     left: 285px;
@@ -396,16 +392,21 @@ main {
   }
 
   .flow-section_step:nth-child(1) {
+    top: 0;
     border-radius: 10px 10px 0 0;
   }
   .flow-section_step:nth-child(2) {
+    top: 0;
     border-radius: 10px 10px 0 0;
   }
   .flow-section_step:nth-child(3) {
+    top: 0;
     border-radius: 0 0 10px 10px;
   }
   .flow-section_step:nth-child(4) {
+    top: 0;
     border-radius: 0 0 10px 10px;
+    height: 140px;
   }
 
   .flow-section_text {

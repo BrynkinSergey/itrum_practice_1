@@ -5,6 +5,22 @@
 }
 
 /* font sizes */
+
+.font-size-xs {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font-size-sm {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.font-size-smd {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .font-size-md {
   font-size: 18px;
   line-height: 18px;
@@ -20,34 +36,17 @@
   line-height: 24px;
 }
 
-@media (max-width: 767px) {
-  .font-size-xs {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .font-size-sm {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .font-size-smd {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .font-size-xl {
-    font-size: 30px;
-    line-height: 35px;
-  }
-
-  .font-size-2xl {
-    font-size: 36px;
-    line-height: 40px;
-  }
+.font-size-xl {
+  font-size: 30px;
+  line-height: 35px;
 }
 
-@media (min-width: 768px) {
+.font-size-2xl {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
   .font-size-xs {
     font-size: 28px;
     line-height: 28px;
