@@ -5,33 +5,30 @@
   padding: 0;
 }
 
-.standard-button {
+.phone-button {
   height: 40px;
   width: 40px;
-}
-
-.phone-button {
   background-image: url(/src/imgs/buttons/icon-phone-btn.svg);
 }
 .mail-button {
+  height: 40px;
+  width: 40px;
   background-image: url(/src/imgs/buttons/icon-mail-btn.svg);
 }
 .auth-button {
+  height: 40px;
+  width: 190px;
   background-image: url(/src/imgs/buttons/icon-auth-btn.svg);
 }
 
 .auth-button--large {
+  height: 50px;
+  width: 270px;
   background-image: url(/src/imgs/buttons/icon-auth-btn-large.svg);
 }
 
-.button-width-190 {
-  width: 190px;
-}
-
-.button-width-270 {
-  width: 270px;
-}
-
-.button-height-50 {
-  height: 50px;
+.more-button {
+  width: 276px;
+  height: 80px;
+  background-image: url(/src/imgs/buttons/icon-more-btn.svg);
 }

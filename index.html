@@ -40,7 +40,7 @@
             О сервисе Направления Попутчики
           </h2>
           <button
-            class="button standard-button auth-button--large button-width-270 button-height-50"></button>
+            class="modal-menu_auth-button-mobile button standard-button auth-button--large button-width-270 button-height-50"></button>
           <div class="modal-menu_contact-sections-wrapper">
             <section class="modal-menu_contact-section">
               <img
@@ -62,26 +62,39 @@
             </section>
           </div>
           <section class="modal-menu_socials">
-            <img src="src/imgs/modal-menu/icon_facebook.svg" />
-            <img src="src/imgs/modal-menu/icon_vkontakte.svg" />
-            <img src="src/imgs/modal-menu/icon_instagram.svg" />
+            <img
+              class="modal-menu_facebook-logo"
+              src="src/imgs/modal-menu/icon_facebook.svg" />
+            <img
+              class="modal-menu_vkontakte-logo"
+              src="src/imgs/modal-menu/icon_vkontakte.svg" />
+            <img
+              class="modal-menu_instagram-logo"
+              src="src/imgs/modal-menu/icon_instagram.svg" />
           </section>
         </div>
       </section>
-      <main>
+      <main class="main-content">
         <section class="promo-section">
           <div class="promo-section_background-content">
-            <img
-              class="promo-section_background-image-1"
-              src="src/imgs/promo-section/backgrounds/bg-img-1.png" />
-            <div class="promo-section_background-2">
+            <div class="mobile-background">
               <img
-                class="promo-section_background-image-2"
-                src="src/imgs/promo-section/backgrounds/bg-img-2.png" />
+                class="promo-section_background-mobile-image-1"
+                src="src/imgs/promo-section/backgrounds/mobile/bg-img-1.png" />
+              <div class="promo-section_background-2">
+                <img
+                  class="promo-section_background-mobile-image-2"
+                  src="src/imgs/promo-section/backgrounds/mobile/bg-img-2.png" />
+              </div>
+              <img
+                class="promo-section_background-mobile-traveller-image"
+                src="src/imgs/promo-section/backgrounds/mobile/traveller-img.png" />
             </div>
-            <img
-              class="promo-section_background-traveller-image"
-              src="src/imgs/promo-section/backgrounds/traveller-img.png" />
+            <div class="tablet-background">
+              <img
+                class="promo-section_background-tablet-image-1"
+                src="src/imgs/promo-section/backgrounds/tablet/bg-img-1.png" />
+            </div>
           </div>
           <div class="promo-section_content">
             <div class="promo-section_el-1">
@@ -98,7 +111,7 @@
             </div>
             <div class="promo-section_el-3">
               <p
-                class="font-color-white font-family-standard font-weight-300 font-size-sm">
+                class="font-color-white font-family-standard font-weight-300 font-size-smd">
                 «Лучшее приложение,<br />
                 что я видел в жизни!»
               </p>
@@ -160,7 +173,7 @@
                 О сервисе
               </h2>
               <p
-                class="font-family-standard font-size-sm font-weight-300 font-color-white">
+                class="font-family-standard font-size-smd font-weight-300 font-color-white">
                 Любое путешествие веселее с попутчиками, которые на одной волне
                 с тобой! Делитесь своими идеями путешествий и черпайте
                 вдохновение в чужих.
@@ -170,6 +183,9 @@
                 А если найдете кого-то близкого по духу — скорее зовите в
                 совместный трип!
               </p>
+            </div>
+            <div class="promo-section_el-6">
+              <button class="button more-button"></button>
             </div>
           </div>
         </section>
