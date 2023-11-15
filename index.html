@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/mobile.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <link rel="stylesheet" href="src/styles/modal.css" />
+    <link rel="stylesheet" href="src/styles/buttons.css" />
+
     <link href="https://fonts.cdnfonts.com/css/blogger-sans" rel="stylesheet" />
     <title>Погнали</title>
-    <script src="/index.js"></script>
+    <script src="src/scripts/index.js"></script>
   </head>
   <body>
     <div class="root">
-      <header class="header bg-color-blue1 font-size-xl">
+      <header class="header bg-color-blue font-size-xl">
         <div class="header-content">
-          <img class="main-logo" src="src/imgs/logo_mobile_white.svg" />
+          <div class="header_logo">
+            <img
+              class="main-logo--mobile"
+              src="src/imgs/header/logo_mobile_white.svg" />
+            <img
+              class="main-logo--tablet"
+              src="src/imgs/header/logo_tablet_white.svg" />
+          </div>
           <img
-            class="icon-menu_mobile"
-            src="src/imgs/icon_menu_mobile_white.svg"
+            class="header_element icon-menu_mobile"
+            src="src/imgs/header/icon_menu_mobile_white.svg"
             onclick="clickMenuButtonHandler()" />
+          <button
+            class="header_element header_auth-button button standard-button auth-button button-width-190"></button>
         </div>
       </header>
       <section class="modal-menu">
@@ -34,7 +45,7 @@
             <section class="modal-menu_contact-section">
               <img
                 class="modal-menu_contact-logo"
-                src="src/imgs/contacts_icon_phone.svg" />
+                src="src/imgs/modal-menu/contacts_icon_phone.svg" />
               <p
                 class="font-color-blue2 font-family-standard font-weight-700 font-size-xs">
                 8 800 555-86-28
@@ -43,7 +54,7 @@
             <section class="modal-menu_contact-section">
               <img
                 class="modal-menu_contact-logo"
-                src="src/imgs/contacts_icon_mail.svg" />
+                src="src/imgs/modal-menu/contacts_icon_mail.svg" />
               <p
                 class="font-color-blue2 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
                 mail@htmlacademy.ru
@@ -51,34 +62,41 @@
             </section>
           </div>
           <section class="modal-menu_socials">
-            <img src="src/imgs/icon_facebook.svg" />
-            <img src="src/imgs/icon_vkontakte.svg" />
-            <img src="src/imgs/icon_instagram.svg" />
+            <img src="src/imgs/modal-menu/icon_facebook.svg" />
+            <img src="src/imgs/modal-menu/icon_vkontakte.svg" />
+            <img src="src/imgs/modal-menu/icon_instagram.svg" />
           </section>
         </div>
       </section>
       <main>
-        <section class="promo">
-          <div class="promo-content-1 bg-color-blue1">
-            <div class="main-promo_bg">
-              <section class="main-promo-section">
-                <h1
-                  class="promo_main-caption font-color-white font-family-standard font-size-2xl font-weight-700">
-                  В путешествие с крутыми попутчиками!
-                </h1>
-                <img src="/src/imgs/traveller-illustration-mobile 1.png" />
-              </section>
+        <section class="promo-section">
+          <div class="promo-section_background-content">
+            <img
+              class="promo-section_background-image-1"
+              src="src/imgs/promo-section/backgrounds/bg-img-1.png" />
+            <div class="promo-section_background-2">
+              <img
+                class="promo-section_background-image-2"
+                src="src/imgs/promo-section/backgrounds/bg-img-2.png" />
             </div>
-
-            <section class="promo_buttons-section">
+            <img
+              class="promo-section_background-traveller-image"
+              src="src/imgs/promo-section/backgrounds/traveller-img.png" />
+          </div>
+          <div class="promo-section_content">
+            <div class="promo-section_el-1">
+              <h1
+                class="font-color-white font-family-standard font-size-2xl font-weight-700">
+                В путешествие с крутыми попутчиками!
+              </h1>
+            </div>
+            <div class="promo-section_el-2">
               <button class="button standard-button phone-button"></button>
               <button class="button standard-button mail-button"></button>
               <button
                 class="button standard-button auth-button button-width-190"></button>
-            </section>
-          </div>
-          <div class="promo-content-2">
-            <section class="promo-text-section">
+            </div>
+            <div class="promo-section_el-3">
               <p
                 class="font-color-white font-family-standard font-weight-300 font-size-sm">
                 «Лучшее приложение,<br />
@@ -89,10 +107,8 @@
                 Мурат Эльтазин<br />
                 главный редактор газеты «гаджетлайф»
               </p>
-            </section>
-          </div>
-          <div class="promo-content-3 bg-color-blue2 bg-border-radius-bot-25">
-            <section class="flow-section">
+            </div>
+            <div class="promo-section_el-4">
               <div class="flow-section_step">
                 <p
                   class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
@@ -137,27 +153,24 @@
                   4
                 </p>
               </div>
-            </section>
-
-            <section class="about-service-section">
-              <div class="about-service-section_content-wrapper">
-                <h2
-                  class="font-family-standard font-size-lg font-weight-700 font-color-orange">
-                  О сервисе
-                </h2>
-                <p
-                  class="font-family-standard font-size-sm font-weight-300 font-color-white">
-                  Любое путешествие веселее с попутчиками, которые на одной
-                  волне с тобой! Делитесь своими идеями путешествий и черпайте
-                  вдохновение в чужих.
-                </p>
-                <p
-                  class="font-family-standard font-size-sm font-weight-700 font-color-white">
-                  А если найдете кого-то близкого по духу — скорее зовите в
-                  совместный трип!
-                </p>
-              </div>
-            </section>
+            </div>
+            <div class="promo-section_el-5">
+              <h2
+                class="font-family-standard font-size-lg font-weight-700 font-color-orange">
+                О сервисе
+              </h2>
+              <p
+                class="font-family-standard font-size-sm font-weight-300 font-color-white">
+                Любое путешествие веселее с попутчиками, которые на одной волне
+                с тобой! Делитесь своими идеями путешествий и черпайте
+                вдохновение в чужих.
+              </p>
+              <p
+                class="font-family-standard font-size-sm font-weight-700 font-color-white">
+                А если найдете кого-то близкого по духу — скорее зовите в
+                совместный трип!
+              </p>
+            </div>
           </div>
         </section>
       </main>

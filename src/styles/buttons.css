@@ -1,0 +1,37 @@
+.button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.standard-button {
+  height: 40px;
+  width: 40px;
+}
+
+.phone-button {
+  background-image: url(/src/imgs/buttons/icon-phone-btn.svg);
+}
+.mail-button {
+  background-image: url(/src/imgs/buttons/icon-mail-btn.svg);
+}
+.auth-button {
+  background-image: url(/src/imgs/buttons/icon-auth-btn.svg);
+}
+
+.auth-button--large {
+  background-image: url(/src/imgs/buttons/icon-auth-btn-large.svg);
+}
+
+.button-width-190 {
+  width: 190px;
+}
+
+.button-width-270 {
+  width: 270px;
+}
+
+.button-height-50 {
+  height: 50px;
+}
