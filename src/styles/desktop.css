@@ -1,0 +1,64 @@
+@media (min-width: 1440px) {
+  .header {
+    height: 90px;
+    padding: 0 60px;
+  }
+
+  .header-content {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .main-logo--mobile {
+    display: none;
+  }
+
+  .main-logo--tablet {
+    width: 200px;
+    height: 50px;
+    display: block;
+  }
+
+  .header_logo::after {
+    position: relative;
+    top: -26px;
+    left: calc(2vw + 230px);
+    content: "";
+    background-color: #fff;
+    width: 60px;
+    height: 2px;
+    display: block;
+  }
+
+  .icon-menu_mobile {
+    display: none;
+  }
+
+  .header_buttons {
+    width: 288px;
+    display: flex;
+  }
+
+  .phone-button {
+    height: 50px;
+    width: 50px;
+  }
+
+  .mail-button {
+    height: 50px;
+    width: 50px;
+  }
+
+  .auth-button {
+    height: 50px;
+    width: 188px;
+    background-image: url(/src/imgs/buttons/icon-auth-btn-desktop.svg);
+  }
+
+  .header_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    width: 391px;
+  }
+}

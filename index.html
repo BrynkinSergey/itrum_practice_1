@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/styles/fonts.css" />
     <link rel="stylesheet" href="src/styles/modal.css" />
     <link rel="stylesheet" href="src/styles/buttons.css" />
+    <link rel="stylesheet" href="src/styles/tablet.css" />
+    <link rel="stylesheet" href="src/styles/desktop.css" />
 
     <link href="https://fonts.cdnfonts.com/css/blogger-sans" rel="stylesheet" />
     <title>Погнали</title>
@@ -30,7 +32,26 @@
             src="src/imgs/header/icon_menu_mobile_white.svg"
             onclick="clickMenuButtonHandler()" />
           <button
-            class="header_element header_auth-button button standard-button auth-button button-width-190"></button>
+            class="header_element header_auth-button button auth-button button-width-190"></button>
+          <nav class="header_navbar">
+            <a
+              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-color-white font-weight-400">
+              о сервисе
+            </a>
+            <a
+              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-color-white font-weight-400"
+              >направления</a
+            >
+            <a
+              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-color-white font-weight-400"
+              >попутчики</a
+            >
+          </nav>
+          <div class="header_buttons">
+            <button class="button phone-button"></button>
+            <button class="button mail-button"></button>
+            <button class="button auth-button button-width-190"></button>
+          </div>
         </div>
       </header>
       <section class="modal-menu">
@@ -40,7 +61,7 @@
             О сервисе Направления Попутчики
           </h2>
           <button
-            class="modal-menu_auth-button-mobile button standard-button auth-button--large button-width-270 button-height-50"></button>
+            class="modal-menu_auth-button-mobile button auth-button--large button-width-270 button-height-50"></button>
           <div class="modal-menu_contact-sections-wrapper">
             <section class="modal-menu_contact-section">
               <img
@@ -111,10 +132,9 @@
               </h1>
             </div>
             <div class="promo-section_el-2">
-              <button class="button standard-button phone-button"></button>
-              <button class="button standard-button mail-button"></button>
-              <button
-                class="button standard-button auth-button button-width-190"></button>
+              <button class="button phone-button"></button>
+              <button class="button mail-button"></button>
+              <button class="button auth-button button-width-190"></button>
             </div>
             <div class="promo-section_el-3">
               <p
