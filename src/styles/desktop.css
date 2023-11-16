@@ -93,4 +93,22 @@
     background-color: #192144;
     border-radius: 0 0 25px 25px;
   }
+
+  .promo-section_background-desktop-traveller-image {
+    position: absolute;
+    top: 110px;
+    right: 405px;
+  }
+
+  .promo-section_background-blue-block {
+    display: block;
+    position: absolute;
+    top: 820px;
+    left: 60px;
+    width: 212px;
+    height: 212px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #141b3b;
+  }
 }
