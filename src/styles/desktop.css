@@ -221,4 +221,35 @@
   .flow-section_step:nth-child(4) > .flow-section_number {
     margin: 30px 33px 0 0;
   }
+
+  /* directions section */
+
+  .directions-section_background {
+    height: 808px;
+    display: flex;
+    justify-content: center;
+  }
+  .background_images-container {
+    width: 1320px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 60px 0 60px;
+  }
+
+  .directions-section_background .background_figure {
+    margin: 0;
+
+    width: 141px;
+    height: 141px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #e2e5f2;
+  }
+
+  .directions-section_background .background_flag_img {
+    width: 287px;
+    height: 575px;
+  }
 }

@@ -160,4 +160,36 @@
     font-weight: 700;
     line-height: 18px;
   }
+
+  /* directions section */
+
+  .directions-section_background {
+    height: 1139px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .background_images-container {
+    width: 688px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  .directions-section_background .background_figure {
+    margin: 326px 0 0 40px;
+
+    width: 141px;
+    height: 141px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #e2e5f2;
+  }
+
+  .directions-section_background .background_flag_img {
+    width: 288px;
+    height: 574px;
+  }
 }

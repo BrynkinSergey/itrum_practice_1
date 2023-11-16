@@ -237,3 +237,32 @@ main {
   font-weight: 700;
   line-height: 18px;
 }
+
+.background {
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+}
+
+/* directions section */
+
+.directions-section {
+  position: relative;
+}
+
+.directions-section_header {
+  position: absolute;
+  top: -30px;
+  z-index: -1;
+  width: 100%;
+  height: 30px;
+  background-color: #edeff6;
+}
+
+.directions-section_background {
+  height: 992px;
+  background-color: #edeff6;
+}
+
+.background_images-container {
+  display: none;
+}
