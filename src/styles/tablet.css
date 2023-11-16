@@ -35,36 +35,8 @@
   }
 
   /* promo section */
-  .promo-section_background-tablet-image-1 {
-    display: block;
-  }
   .mobile-background {
     display: none;
-  }
-
-  /* .promo-section_background-mobile-image-1 {
-    display: none;
-  }
-
-  .promo-section_background-mobile-image-2 {
-    display: none;
-  }
-
-  .promo-section_background-mobile-traveller-image {
-    display: none;
-  } */
-
-  .promo-section_background-tablet-image-1 {
-    display: none;
-    margin-top: 250px;
-  }
-
-  .promo-section_background-tablet-image-1 {
-    display: block;
-  }
-
-  .promo-section_background-tablet-image-2 {
-    display: block;
   }
 
   .tablet-background {
