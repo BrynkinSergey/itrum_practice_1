@@ -148,6 +148,11 @@ main {
   display: none;
 }
 
+.promo-section_background-tablet-image-1 {
+  display: block;
+  margin-top: 250px;
+}
+
 .mobile-background {
   display: flex;
   flex-direction: column;
