@@ -164,7 +164,7 @@
   /* directions section */
 
   .directions-section_background {
-    height: 1139px;
+    height: 1093px;
     display: flex;
     justify-content: center;
   }
@@ -179,7 +179,7 @@
   }
 
   .directions-section_background .background_figure {
-    margin: 326px 0 0 40px;
+    margin: 326px 0 0 0;
 
     width: 141px;
     height: 141px;
@@ -191,5 +191,110 @@
   .directions-section_background .background_flag_img {
     width: 288px;
     height: 574px;
+  }
+
+  .directions-section_content {
+    margin-top: 73px;
+    width: 618px;
+    height: 940px;
+
+    display: block;
+  }
+
+  .directions-section_text {
+    width: 378px;
+    height: 267px;
+    margin-bottom: 104px;
+  }
+
+  .directions-section_button {
+    width: 620px;
+    height: 82px;
+  }
+
+  .directions-section_cards {
+    width: 620px;
+    height: 440px;
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .directions-section_card {
+    position: relative;
+    width: 620px;
+    height: 140px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .card_image {
+    position: relative;
+    width: 185px;
+    height: 140px;
+  }
+
+  .card_flag {
+    position: absolute;
+
+    left: 25px;
+    top: -12px;
+
+    width: 35px;
+    height: 24px;
+  }
+
+  .card_content {
+    position: relative;
+
+    z-index: 1;
+    width: 435px;
+    height: 140px;
+    top: 0;
+    padding: 30px 30px 24px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    border-radius: 20px 0 0 20px;
+    background-color: #fff;
+  }
+
+  .country-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .czech-bg {
+    background-image: url(/src/imgs/directions-section/czech-desktop\ 3.svg);
+  }
+
+  .france-bg {
+    background-image: url(/src/imgs/directions-section/france-desktop\ 2.svg);
+  }
+
+  .thailand-bg {
+    background-image: url(/src/imgs/directions-section/thailand-desktop\ 3.svg);
+  }
+
+  .user-views {
+    position: relative;
+    left: 32px;
+  }
+
+  .user-views::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: -4px;
+    background-image: url(/src/imgs/directions-section/icon_user_tablet.svg);
+    width: 24px;
+    height: 24px;
   }
 }

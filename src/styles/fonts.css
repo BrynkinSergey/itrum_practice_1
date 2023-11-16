@@ -6,6 +6,11 @@
 
 /* font sizes */
 
+.font-size-xxs {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .font-size-xs {
   font-size: 16px;
   line-height: 18px;
@@ -32,8 +37,8 @@
 }
 
 .font-size-md3 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .font-size-lg {
@@ -52,6 +57,11 @@
 }
 
 @media (min-width: 768px) {
+  .font-size-xxs {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .font-size-xs {
     font-size: 28px;
     line-height: 28px;
@@ -75,6 +85,10 @@
   .font-size-md2 {
     font-size: 30px;
     line-height: 30px;
+  }
+  .font-size-md3 {
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .font-size-lg {
@@ -122,12 +136,32 @@
   color: #192144;
 }
 
+.font-color-blue-op03 {
+  color: rgba(22, 28, 53, 0.3);
+}
+
 .font-color-white {
   color: #fff;
+}
+
+.font-color-grey {
+  color: #444;
+}
+
+.font-color-special-grey {
+  color: #444444;
+}
+
+.font-color-black {
+  color: #000;
 }
 
 /* text transform */
 
 .text-transform-uppercase {
   text-transform: uppercase;
+}
+
+.font-opacity-03 {
+  opacity: 0.3;
 }
