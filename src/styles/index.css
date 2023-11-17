@@ -540,7 +540,7 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 1321px;
+  height: 450px;
   width: 100vw;
 }
 
@@ -553,4 +553,122 @@ main {
   width: 100%;
   border-radius: 20px;
   background: #e2e5f2;
+}
+
+.business-plans-section_content {
+  width: 270px;
+  padding: 37px 0 0 25px;
+
+  z-index: 100;
+
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  grid-template-rows: 16px 115px 228px 1fr;
+  grid-template-areas:
+    ". image"
+    "caption ."
+    "table table"
+    "button button";
+}
+
+.business-plans_caption {
+  grid-area: caption;
+}
+
+.business-plans_button-container {
+  grid-area: button;
+  width: 219px;
+}
+
+.business-plans_button {
+  padding: 0;
+}
+
+.business-plans_image {
+  grid-area: image;
+  width: 100px;
+  height: 100px;
+}
+
+.business-plans_table {
+  grid-area: table;
+  display: flex;
+  flex-direction: column;
+
+  width: 244px;
+  height: 198px;
+}
+
+.business-plans_icon {
+  display: none;
+  grid-area: icon;
+  width: 68px;
+  height: 68px;
+}
+
+.business-plans_table-row {
+  width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-plans_table-step-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  margin-top: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-plans_table-row:nth-child(1) > .business-plans_table-step-number {
+  background-color: #ff8d30;
+}
+
+.business-plans_table-row:nth-child(2) > .business-plans_table-step-number {
+  background-color: #ffbd30;
+}
+
+.business-plans_table-row:nth-child(3) > .business-plans_table-step-number {
+  background-color: #ffd74b;
+}
+
+.business-plans_table-text-container {
+  position: relative;
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.business-plans_table-text-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #e1e3e9;
+}
+
+.business-plans_table-row:nth-child(3)
+  > .business-plans_table-text-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #e1e3e9;
 }

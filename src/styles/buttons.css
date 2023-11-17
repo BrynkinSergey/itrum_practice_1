@@ -6,6 +6,14 @@
   background-size: contain;
 }
 
+.btn-bg-color--yellow {
+  background-color: #ffd74b;
+}
+
+.btn-bg-color--white {
+  background-color: #edeff6;
+}
+
 .phone-button {
   height: 40px;
   width: 40px;
@@ -34,29 +42,26 @@
   background-image: url(/src/imgs/buttons/icon-more-btn.svg);
 }
 
-.yellow-btn {
+.standard-btn {
   width: 100%;
   height: 100%;
   padding: 0 23px;
 
-  background-color: #ffd74b;
   border-radius: 20px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  font-size: 18px;
-  line-height: 18px;
+  /* font-size: 18px;
+  line-height: 18px; */
   text-align: start;
 
   color: #1d2e5b;
 }
 
 @media (min-width: 768px) {
-  .yellow-btn {
+  .standard-btn {
     padding: 0 32px;
-    font-size: 24px;
-    line-height: 24px;
   }
 }

@@ -472,4 +472,58 @@
     width: 1440px;
     padding: 235px 244px 215px 750px;
   }
+
+  .business-plans-section_content {
+    width: 1180px;
+    padding: 107px 0 0 0px;
+
+    grid-template-columns: 90px 261px 628px 1fr;
+    grid-template-rows: 176px 218px 26px 14px 1fr;
+    grid-template-areas:
+      ". . caption caption"
+      "table . . image"
+      "icon . . ."
+      ". button . .";
+  }
+
+  .business-plans_caption {
+    width: 482px;
+    height: 45px;
+  }
+
+  .business-plans_image {
+    width: 198px;
+    height: 198px;
+  }
+
+  .business-plans_button-container {
+    width: 274px;
+    height: 20px;
+  }
+
+  .business-plans_table {
+    width: 905px;
+    height: 198px;
+  }
+
+  .business-plans_icon {
+    display: grid;
+  }
+
+  .business-plans_table-row {
+    flex-direction: row-reverse;
+    gap: 22px;
+    justify-content: flex-end;
+  }
+
+  .business-plans_table-step-number {
+    width: 68px;
+    height: 68px;
+  }
+  .business-plans_table-text-container {
+    width: 814px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
