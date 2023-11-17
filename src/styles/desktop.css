@@ -258,7 +258,7 @@
   }
 
   .directions-section_content {
-    margin-top: 160px;
+    padding: 160px 0 0 0;
     width: 1110px;
     height: 440px;
 
@@ -319,6 +319,8 @@
     position: relative;
     width: 185px;
     height: 140px;
+
+    border-radius: 0 20px 20px 0;
   }
 
   .card_flag {
@@ -430,5 +432,37 @@
   .companions-men-bg-img {
     width: 143px;
     height: 143px;
+  }
+
+  .companions-section_content {
+    width: 1320px;
+    padding: 130px 0 134px 69px;
+
+    display: grid;
+    grid-template-columns: 621px 1fr;
+    grid-template-rows: 4px 403px 1fr;
+    grid-template-areas:
+      "text ."
+      ". cards"
+      "button .";
+  }
+
+  .companions-section_text {
+    grid-area: text;
+    width: 428px;
+    height: 322px;
+  }
+
+  .companions-section_cards {
+    grid-area: cards;
+    width: 630px;
+    height: 483px;
+    flex-direction: row;
+  }
+
+  .companions-section_button {
+    grid-area: button;
+    width: 280px;
+    height: 80px;
   }
 }

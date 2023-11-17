@@ -273,7 +273,7 @@ main {
 }
 
 .directions-section_content {
-  margin-top: 71px;
+  padding: 71px 0 34px 0;
   width: 270px;
   height: 100%;
   z-index: 2;
@@ -297,6 +297,10 @@ main {
 .directions-section_cards {
   width: 270px;
   height: 590px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .directions-section_button {
@@ -388,12 +392,11 @@ main {
 
 .companions-section {
   position: relative;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   height: 1321px;
   width: 100vw;
 }
-
 .companions-section_header {
   position: absolute;
   z-index: -1;
@@ -402,7 +405,6 @@ main {
   top: -29px;
   background-color: #192144;
 }
-
 .companions-section_background {
   position: absolute;
   z-index: 2;
@@ -412,7 +414,6 @@ main {
   display: flex;
   justify-content: center;
 }
-
 .companion-background_images-container {
   width: 320px;
   height: 100%;
@@ -424,7 +425,6 @@ main {
     "block men"
     "women .";
 }
-
 .companions-blue-block {
   grid-area: block;
   width: 113px;
@@ -437,9 +437,138 @@ main {
   width: 64px;
   height: 71px;
 }
-
 .companions-men-bg-img {
   grid-area: men;
   width: 143px;
   height: 143px;
+}
+
+.card-flag {
+  width: 35px;
+  height: 25px;
+}
+
+.companions-section_content {
+  height: 100%;
+  width: 270px;
+  padding: 68px 0 31px 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.companions-section_text {
+  width: 217px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.companions-section_cards {
+  width: 270px;
+  height: 865px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.companions-section_button {
+  width: 270px;
+  height: 61px;
+}
+
+.companion-card {
+  position: relative;
+  width: 270px;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+}
+
+.companion-card_image {
+  width: 270px;
+  height: 270px;
+}
+
+.companion-card_content {
+  position: relative;
+  height: 158px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+
+  padding: 27px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companion-card_progress-bar {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 60px;
+  height: 60px;
+}
+
+.companion-card-flags {
+  position: absolute;
+  top: -12px;
+
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.companion-card_tags {
+  text-align: center;
+}
+
+.companion-card_vehicles {
+  width: 120px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companion-card_vehicle {
+  width: 25px;
+  height: 25px;
+}
+
+.companion-card_name {
+  position: relative;
+}
+
+.companion-card_name-1::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: -16px;
+  top: 8px;
+  background-color: #f97676;
+  border-radius: 50%;
+}
+
+.companion-card_name-2::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: -16px;
+  top: 8px;
+  background-color: #81e31e;
+  border-radius: 50%;
 }
