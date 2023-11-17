@@ -1,0 +1,27 @@
+.background {
+  z-index: 2;
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+
+  position: absolute;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.background_color--white {
+  background-color: #edeff6;
+}
+
+.background_color--blue {
+  background-color: #192144;
+}
+
+.background_header {
+  position: absolute;
+  top: -29px;
+  z-index: -1;
+  width: 100vw;
+  height: 30px;
+}

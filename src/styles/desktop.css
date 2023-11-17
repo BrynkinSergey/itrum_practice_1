@@ -400,11 +400,6 @@
     height: 751px;
   }
 
-  .companions-section_header {
-    height: 101px;
-    top: -100px;
-  }
-
   .companion-background_images-container {
     width: 1320px;
     padding-top: 70px;
@@ -464,5 +459,17 @@
     grid-area: button;
     width: 280px;
     height: 80px;
+  }
+
+  /* business plans */
+
+  .business-plans-section {
+    height: 750px;
+  }
+
+  .business-plans-background_images-container {
+    display: flex;
+    width: 1440px;
+    padding: 235px 244px 215px 750px;
   }
 }
