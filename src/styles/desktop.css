@@ -224,6 +224,10 @@
 
   /* directions section */
 
+  .directions-section {
+    height: 808px;
+  }
+
   .directions-section_background {
     height: 808px;
     display: flex;
@@ -386,5 +390,16 @@
     width: 560px;
     height: 80px;
     background-image: url(/src/imgs/directions-section/fade\ 1.svg);
+  }
+
+  /* companions section */
+
+  .companions-section {
+    height: 751px;
+  }
+
+  .companions-section_header {
+    height: 101px;
+    top: -100px;
   }
 }

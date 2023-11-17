@@ -163,6 +163,22 @@
 
   /* directions section */
 
+  .directions-section {
+    height: 1093px;
+  }
+
+  .directions-section_content {
+    margin-top: 71px;
+    width: 270px;
+    height: 887px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .directions-section_background {
     height: 1093px;
     display: flex;
@@ -296,5 +312,16 @@
     background-image: url(/src/imgs/directions-section/icon_user_tablet.svg);
     width: 24px;
     height: 24px;
+  }
+
+  /* companions section */
+
+  .companions-section {
+    height: 1254px;
+  }
+
+  .companions-section_header {
+    height: 67px;
+    top: -67px;
   }
 }
