@@ -402,4 +402,33 @@
     height: 101px;
     top: -100px;
   }
+
+  .companion-background_images-container {
+    width: 1320px;
+    padding-top: 70px;
+
+    grid-template-rows: 64px 252px 1fr;
+    grid-template-columns: 130px 357px 1fr;
+    grid-template-areas:
+      "block . ."
+      ". . men"
+      ". women .";
+  }
+
+  .companions-blue-block {
+    width: 212px;
+    height: 212px;
+    border-radius: 20px;
+  }
+  .companions-women-bg-img {
+    padding-top: 0px;
+
+    width: 285px;
+    height: 285px;
+  }
+
+  .companions-men-bg-img {
+    width: 143px;
+    height: 143px;
+  }
 }
