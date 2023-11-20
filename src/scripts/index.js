@@ -6,13 +6,19 @@ let isInterested = false;
 const handleIsInterested = () => {
   isInterested = !isInterested;
 
+  const contactsSection = document.querySelector(
+    ".contacts-section_hidden-part"
+  );
   const elems = document.querySelectorAll(".disabled-if-not-interested");
   console.log(elems);
 
   if (isInterested) {
     elems.forEach((el) => (el.style.display = "block"));
-  } else {
-    elems.forEach((el) => (el.style.display = "none"));
+    contactsSection.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "start",
+    });
   }
 };
 
