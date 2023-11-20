@@ -22,6 +22,32 @@ const handleIsInterested = () => {
   }
 };
 
+const scrollToSection = (targetName) => {
+  let target = null;
+
+  switch (targetName) {
+    case "aboutService":
+      target = document.querySelector(".promo-section_el-5");
+      break;
+    case "directions":
+      target = document.querySelector(".directions-section");
+      break;
+    case "companions":
+      target = document.querySelector(".companions-section");
+      break;
+    default:
+      target = null;
+  }
+
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "start",
+    });
+  }
+};
+
 const setHeaderStyle = (style) => {
   const header = document.querySelector("header");
   const logoMobile = document.querySelector(".main-logo--mobile");
