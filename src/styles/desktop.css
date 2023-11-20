@@ -478,7 +478,7 @@
     padding: 107px 0 0 0px;
 
     grid-template-columns: 90px 261px 628px 1fr;
-    grid-template-rows: 176px 218px 26px 14px 1fr;
+    grid-template-rows: 176px 248px 26px 14px 1fr;
     grid-template-areas:
       ". . caption caption"
       "table . . image"
