@@ -1,6 +1,21 @@
 const blue2Color = "#192144";
 const whiteColor = "#fff";
 
+let isInterested = false;
+
+const handleIsInterested = () => {
+  isInterested = !isInterested;
+
+  const elems = document.querySelectorAll(".disabled-if-not-interested");
+  console.log(elems);
+
+  if (isInterested) {
+    elems.forEach((el) => (el.style.display = "block"));
+  } else {
+    elems.forEach((el) => (el.style.display = "none"));
+  }
+};
+
 const setHeaderStyle = (style) => {
   const header = document.querySelector("header");
   const logoMobile = document.querySelector(".main-logo--mobile");

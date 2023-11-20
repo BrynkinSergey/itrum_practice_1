@@ -184,6 +184,10 @@
   color: #000;
 }
 
+.font-color-yellow {
+  color: #ffd74b;
+}
+
 /* text transform */
 
 .text-transform-uppercase {
@@ -192,4 +196,8 @@
 
 .font-opacity-03 {
   opacity: 0.3;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
 }

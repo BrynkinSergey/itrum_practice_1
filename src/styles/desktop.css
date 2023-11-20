@@ -526,4 +526,62 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  /* contacts section */
+
+  .contacts-section_visible-part {
+    height: 211px;
+  }
+
+  .contacts-section_hidden-part {
+    height: 540px;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .contacts-section-text {
+    width: 618px;
+    height: 64px;
+    text-align: center;
+  }
+
+  .contacts-section_content {
+    gap: 65px;
+  }
+
+  .contacts-section_email-block {
+    position: relative;
+    width: 1174px;
+    height: 80px;
+  }
+
+  .contacts-section_email-input {
+    width: 850px;
+  }
+
+  .contacts-section_send-email-button {
+    width: 324px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .contacts-section_contacts {
+    width: 868px;
+    display: flex;
+  }
+
+  .contact-block {
+    height: 90px;
+    gap: 22px;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .contact-logo {
+    width: 90px;
+    height: 90px;
+  }
 }
