@@ -18,6 +18,10 @@
     width: 190px;
   }
 
+  .footer_logo {
+    width: 190px;
+  }
+
   .main-logo--mobile {
     display: none;
   }
@@ -493,5 +497,23 @@
 
   .routes_button-container {
     height: 80px;
+  }
+
+  /* footer */
+
+  .footer {
+    bottom: -100px;
+    height: 140px;
+    padding: 0 40px;
+    flex-direction: row;
+  }
+
+  .footer_developers {
+    width: 154px;
+  }
+
+  .footer_socilal {
+    width: 68px;
+    height: 68px;
   }
 }

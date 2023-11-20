@@ -800,6 +800,7 @@ main {
 }
 
 .disabled-if-not-interested {
+  position: relative;
   display: none;
 }
 
@@ -812,4 +813,54 @@ main {
 .map {
   height: 100%;
   width: 100%;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  bottom: -200px;
+  height: 240px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 25px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer_logo {
+  position: relative;
+  z-index: 500px;
+  width: 96px;
+  height: 35px;
+}
+
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.footer_developers {
+  position: relative;
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer_developers::before {
+    position: absolute;
+    top: -13px;
+    content: "";
+    width: 270px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
 }

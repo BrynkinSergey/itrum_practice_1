@@ -38,6 +38,10 @@
     display: block;
   }
 
+  .footer_logo {
+    width: 190px;
+  }
+
   .icon-menu_mobile {
     display: none;
   }
@@ -606,5 +610,23 @@
   .routes_button-container {
     width: 324px;
     height: 80px;
+  }
+
+  /* footer */
+
+  .footer {
+    bottom: -112px;
+    height: 152px;
+    padding: 0 60px;
+    flex-direction: row;
+  }
+
+  .footer_developers {
+    width: 154px;
+  }
+
+  .footer_socilal {
+    width: 68px;
+    height: 68px;
   }
 }
