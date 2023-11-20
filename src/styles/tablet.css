@@ -476,4 +476,22 @@
     width: 68px;
     height: 68px;
   }
+
+  /* route section */
+
+  .route-section {
+    height: 324px;
+  }
+
+  .routes-content {
+    width: 618px;
+  }
+
+  .routes_address-container {
+    gap: 26px;
+  }
+
+  .routes_button-container {
+    height: 80px;
+  }
 }

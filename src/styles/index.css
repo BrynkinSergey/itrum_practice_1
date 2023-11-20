@@ -764,3 +764,38 @@ main {
   width: 45px;
   height: 45px;
 }
+
+/* route section */
+
+.route-section {
+  position: relative;
+  display: none;
+  height: 206px;
+}
+
+.routes-content {
+  z-index: 100;
+  height: 100%;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.routes_address-container {
+  /* position: relative; */
+  z-index: 100;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.routes_button-container {
+  z-index: 100;
+  width: 100%;
+  height: 62px;
+}

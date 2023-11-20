@@ -18,6 +18,10 @@
   background-color: #192144;
 }
 
+.background_color--yellow {
+  background-color: #ffd74b;
+}
+
 .background_header {
   position: absolute;
   top: -29px;
