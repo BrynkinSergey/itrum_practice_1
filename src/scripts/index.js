@@ -9,11 +9,16 @@ const handleIsInterested = () => {
   const contactsSection = document.querySelector(
     ".contacts-section_hidden-part"
   );
-  const elems = document.querySelectorAll(".disabled-if-not-interested");
-  console.log(elems);
+  const blockElems = document.querySelectorAll(
+    ".disabled-if-not-interested--block"
+  );
+  const flexElems = document.querySelectorAll(
+    ".disabled-if-not-interested--flex"
+  );
 
   if (isInterested) {
-    elems.forEach((el) => (el.style.display = "block"));
+    blockElems.forEach((el) => (el.style.display = "block"));
+    flexElems.forEach((el) => (el.style.display = "flex"));
     contactsSection.scrollIntoView({
       behavior: "smooth",
       block: "center",

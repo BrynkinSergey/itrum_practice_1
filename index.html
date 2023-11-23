@@ -16,628 +16,619 @@
     <title>Погнали</title>
     <script src="src/scripts/index.js"></script>
   </head>
-  <body>
-    <div class="root">
-      <header class="header bg-color-blue font-size-xl">
-        <div class="header-content">
-          <div class="header_logo">
-            <img
-              class="main-logo--mobile"
-              src="src/imgs/header/logo_mobile_white.svg" />
-            <img
-              class="main-logo--tablet"
-              src="src/imgs/header/logo_tablet_white.svg" />
-          </div>
+  <body class="body">
+    <header class="header bg-color-blue font-size-xl">
+      <div class="header-content">
+        <div class="header_logo">
           <img
-            class="header_element icon-menu_mobile"
-            src="src/imgs/header/icon_menu_mobile_white.svg"
-            onclick="clickMenuButtonHandler()" />
-          <button
-            class="header_element header_auth-button button auth-button button-width-190"></button>
-          <nav class="header_navbar font-color-white">
-            <a
-              onclick="scrollToSection('aboutService')"
-              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400">
-              о сервисе
-            </a>
-            <a
-              onclick="scrollToSection('directions')"
-              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400"
-              >направления</a
-            >
-            <a
-              onclick="scrollToSection('companions')"
-              class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400"
-              >попутчики</a
-            >
-          </nav>
-          <div class="header_buttons">
+            class="main-logo--mobile"
+            src="src/imgs/header/logo_mobile_white.svg" />
+          <img
+            class="main-logo--tablet"
+            src="src/imgs/header/logo_tablet_white.svg" />
+        </div>
+        <img
+          class="header_element icon-menu_mobile"
+          src="src/imgs/header/icon_menu_mobile_white.svg"
+          onclick="clickMenuButtonHandler()" />
+        <button
+          class="header_element header_auth-button button auth-button button-width-190"></button>
+        <nav class="header_navbar font-color-white">
+          <a
+            onclick="scrollToSection('aboutService')"
+            class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400">
+            о сервисе
+          </a>
+          <a
+            onclick="scrollToSection('directions')"
+            class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400"
+            >направления</a
+          >
+          <a
+            onclick="scrollToSection('companions')"
+            class="header_navlink font-family-standard font-size-md3 text-transform-uppercase font-weight-400"
+            >попутчики</a
+          >
+        </nav>
+        <div class="header_buttons">
+          <button class="button phone-button"></button>
+          <button class="button mail-button"></button>
+          <button class="button auth-button button-width-190"></button>
+        </div>
+      </div>
+    </header>
+    <section class="modal-menu">
+      <div class="modal-menu_content">
+        <h2
+          class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl">
+          О сервисе Направления Попутчики
+        </h2>
+        <button
+          class="modal-menu_auth-button-mobile button auth-button--large button-width-270 button-height-50"></button>
+        <div class="modal-menu_contact-sections-wrapper">
+          <section class="modal-menu_contact-section">
+            <img
+              class="modal-menu_contact-logo"
+              src="src/imgs/modal-menu/contacts_icon_phone.svg" />
+            <p
+              class="font-color-blue2 font-family-standard font-weight-700 font-size-xs">
+              8 800 555-86-28
+            </p>
+          </section>
+          <section class="modal-menu_contact-section">
+            <img
+              class="modal-menu_contact-logo"
+              src="src/imgs/modal-menu/contacts_icon_mail.svg" />
+            <p
+              class="font-color-blue2 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
+              mail@htmlacademy.ru
+            </p>
+          </section>
+        </div>
+        <section class="modal-menu_socials">
+          <img
+            class="modal-menu_facebook-logo"
+            src="src/imgs/modal-menu/icon_facebook.svg" />
+          <img
+            class="modal-menu_vkontakte-logo"
+            src="src/imgs/modal-menu/icon_vkontakte.svg" />
+          <img
+            class="modal-menu_instagram-logo"
+            src="src/imgs/modal-menu/icon_instagram.svg" />
+        </section>
+      </div>
+    </section>
+    <main class="main-content">
+      <section class="promo-section">
+        <div class="promo-section_background-content">
+          <div class="mobile-background">
+            <img
+              class="promo-section_background-mobile-image-1"
+              src="src/imgs/promo-section/backgrounds/mobile/bg-img-1.png" />
+            <div class="promo-section_background-2">
+              <img
+                class="promo-section_background-mobile-image-2"
+                src="src/imgs/promo-section/backgrounds/mobile/bg-img-2.png" />
+            </div>
+            <img
+              class="promo-section_background-mobile-traveller-image"
+              src="src/imgs/promo-section/backgrounds/mobile/traveller-img.png" />
+          </div>
+          <div class="tablet-background">
+            <img
+              class="promo-section_background-tablet-image-1"
+              src="src/imgs/promo-section/backgrounds/tablet/bg-img-1.png" />
+            <img
+              class="promo-section_background-tablet-image-2"
+              src="src/imgs/promo-section/backgrounds/tablet/bg-img-2.svg" />
+            <img
+              class="promo-section_background-tablet-traveller-image"
+              src="src/imgs/promo-section/backgrounds/tablet/traveller-img.svg" />
+            <div class="promo-section_background-blue-block"></div>
+          </div>
+          <div class="desktop-background">
+            <img
+              class="promo-section_background-desktop-image-1"
+              src="src/imgs/promo-section/backgrounds/desktop/bg-img-1.png" />
+            <img
+              class="promo-section_background-desktop-image-2"
+              src="src/imgs/promo-section/backgrounds/desktop/bg-img-2.svg" />
+            <img
+              class="promo-section_background-desktop-traveller-image"
+              src="src/imgs/promo-section/backgrounds/desktop/traveller-img.svg" />
+            <div class="promo-section_background-blue-block"></div>
+          </div>
+        </div>
+
+        <div class="promo-section_content">
+          <div class="promo-section_el-1">
+            <h1
+              class="font-color-white font-family-standard font-size-2xl font-weight-700">
+              В путешествие с крутыми попутчиками!
+            </h1>
+          </div>
+          <div class="promo-section_el-2">
             <button class="button phone-button"></button>
             <button class="button mail-button"></button>
             <button class="button auth-button button-width-190"></button>
           </div>
-        </div>
-      </header>
-      <section class="modal-menu">
-        <div class="modal-menu_content">
-          <h2
-            class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl">
-            О сервисе Направления Попутчики
-          </h2>
-          <button
-            class="modal-menu_auth-button-mobile button auth-button--large button-width-270 button-height-50"></button>
-          <div class="modal-menu_contact-sections-wrapper">
-            <section class="modal-menu_contact-section">
-              <img
-                class="modal-menu_contact-logo"
-                src="src/imgs/modal-menu/contacts_icon_phone.svg" />
-              <p
-                class="font-color-blue2 font-family-standard font-weight-700 font-size-xs">
-                8 800 555-86-28
-              </p>
-            </section>
-            <section class="modal-menu_contact-section">
-              <img
-                class="modal-menu_contact-logo"
-                src="src/imgs/modal-menu/contacts_icon_mail.svg" />
-              <p
-                class="font-color-blue2 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
-                mail@htmlacademy.ru
-              </p>
-            </section>
+          <div class="promo-section_el-3">
+            <p
+              class="font-color-white font-family-standard font-weight-300 font-size-smd">
+              «Лучшее приложение,<br />
+              что я видел в жизни!»
+            </p>
+            <p
+              class="font-color-white font-family-standard font-weight-700 font-size-sm">
+              Мурат Эльтазин<br />
+              главный редактор газеты «гаджетлайф»
+            </p>
           </div>
-          <section class="modal-menu_socials">
-            <img
-              class="modal-menu_facebook-logo"
-              src="src/imgs/modal-menu/icon_facebook.svg" />
-            <img
-              class="modal-menu_vkontakte-logo"
-              src="src/imgs/modal-menu/icon_vkontakte.svg" />
-            <img
-              class="modal-menu_instagram-logo"
-              src="src/imgs/modal-menu/icon_instagram.svg" />
-          </section>
+          <div class="promo-section_el-4">
+            <div class="flow-section_step">
+              <p
+                class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
+                Выберите<br />
+                направление
+              </p>
+              <p
+                class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
+                1
+              </p>
+            </div>
+            <div class="flow-section_step">
+              <p
+                class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
+                Изучите идеи<br />
+                путешественников
+              </p>
+              <p
+                class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
+                2
+              </p>
+            </div>
+            <div class="flow-section_step">
+              <p
+                class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
+                Находите тех,<br />
+                кто похож на вас
+              </p>
+              <p
+                class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
+                3
+              </p>
+            </div>
+            <div class="flow-section_step">
+              <p
+                class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
+                Путешествуйте<br />
+                вместе!
+              </p>
+              <p
+                class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
+                4
+              </p>
+            </div>
+          </div>
+          <div class="promo-section_el-5">
+            <h2
+              class="font-family-standard font-size-lg font-weight-700 font-color-orange">
+              О сервисе
+            </h2>
+            <p
+              class="font-family-standard font-size-smd font-weight-300 font-color-white">
+              Любое путешествие веселее с попутчиками, которые на одной волне с
+              тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+              чужих.
+            </p>
+            <p
+              class="font-family-standard font-size-sm font-weight-700 font-color-white">
+              А если найдете кого-то близкого по духу — скорее зовите в
+              совместный трип!
+            </p>
+          </div>
+          <div class="promo-section_el-6">
+            <button class="button more-button"></button>
+          </div>
         </div>
       </section>
-      <main class="main-content">
-        <section class="promo-section">
-          <div class="promo-section_background-content">
-            <div class="mobile-background">
-              <img
-                class="promo-section_background-mobile-image-1"
-                src="src/imgs/promo-section/backgrounds/mobile/bg-img-1.png" />
-              <div class="promo-section_background-2">
-                <img
-                  class="promo-section_background-mobile-image-2"
-                  src="src/imgs/promo-section/backgrounds/mobile/bg-img-2.png" />
-              </div>
-              <img
-                class="promo-section_background-mobile-traveller-image"
-                src="src/imgs/promo-section/backgrounds/mobile/traveller-img.png" />
-            </div>
-            <div class="tablet-background">
-              <img
-                class="promo-section_background-tablet-image-1"
-                src="src/imgs/promo-section/backgrounds/tablet/bg-img-1.png" />
-              <img
-                class="promo-section_background-tablet-image-2"
-                src="src/imgs/promo-section/backgrounds/tablet/bg-img-2.svg" />
-              <img
-                class="promo-section_background-tablet-traveller-image"
-                src="src/imgs/promo-section/backgrounds/tablet/traveller-img.svg" />
-              <div class="promo-section_background-blue-block"></div>
-            </div>
-            <div class="desktop-background">
-              <img
-                class="promo-section_background-desktop-image-1"
-                src="src/imgs/promo-section/backgrounds/desktop/bg-img-1.png" />
-              <img
-                class="promo-section_background-desktop-image-2"
-                src="src/imgs/promo-section/backgrounds/desktop/bg-img-2.svg" />
-              <img
-                class="promo-section_background-desktop-traveller-image"
-                src="src/imgs/promo-section/backgrounds/desktop/traveller-img.svg" />
-              <div class="promo-section_background-blue-block"></div>
-            </div>
-          </div>
 
-          <div class="promo-section_content">
-            <div class="promo-section_el-1">
-              <h1
-                class="font-color-white font-family-standard font-size-2xl font-weight-700">
-                В путешествие с крутыми попутчиками!
-              </h1>
-            </div>
-            <div class="promo-section_el-2">
-              <button class="button phone-button"></button>
-              <button class="button mail-button"></button>
-              <button class="button auth-button button-width-190"></button>
-            </div>
-            <div class="promo-section_el-3">
-              <p
-                class="font-color-white font-family-standard font-weight-300 font-size-smd">
-                «Лучшее приложение,<br />
-                что я видел в жизни!»
-              </p>
-              <p
-                class="font-color-white font-family-standard font-weight-700 font-size-sm">
-                Мурат Эльтазин<br />
-                главный редактор газеты «гаджетлайф»
-              </p>
-            </div>
-            <div class="promo-section_el-4">
-              <div class="flow-section_step">
-                <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
-                  Выберите<br />
-                  направление
-                </p>
-                <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
-                  1
-                </p>
-              </div>
-              <div class="flow-section_step">
-                <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
-                  Изучите идеи<br />
-                  путешественников
-                </p>
-                <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
-                  2
-                </p>
-              </div>
-              <div class="flow-section_step">
-                <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
-                  Находите тех,<br />
-                  кто похож на вас
-                </p>
-                <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
-                  3
-                </p>
-              </div>
-              <div class="flow-section_step">
-                <p
-                  class="flow-section_text font-color-blue font-family-standard font-weight-700 font-size-md">
-                  Путешествуйте<br />
-                  вместе!
-                </p>
-                <p
-                  class="flow-section_number font-color-white font-family-standard font-weight-700 font-size-md">
-                  4
-                </p>
-              </div>
-            </div>
-            <div class="promo-section_el-5">
-              <h2
-                class="font-family-standard font-size-lg font-weight-700 font-color-orange">
-                О сервисе
-              </h2>
-              <p
-                class="font-family-standard font-size-smd font-weight-300 font-color-white">
-                Любое путешествие веселее с попутчиками, которые на одной волне
-                с тобой! Делитесь своими идеями путешествий и черпайте
-                вдохновение в чужих.
-              </p>
-              <p
-                class="font-family-standard font-size-sm font-weight-700 font-color-white">
-                А если найдете кого-то близкого по духу — скорее зовите в
-                совместный трип!
-              </p>
-            </div>
-            <div class="promo-section_el-6">
-              <button class="button more-button"></button>
-            </div>
+      <section class="directions-section">
+        <div class="background_header background_color--white"></div>
+        <div class="background_color--white background">
+          <div class="background_images-container">
+            <div class="background_figure"></div>
+            <img
+              class="background_flag_img"
+              src="src/imgs/directions-section/flags-back 1.svg" />
           </div>
-        </section>
+        </div>
 
-        <section class="directions-section">
-          <div class="background_header background_color--white"></div>
-          <div class="background_color--white background">
-            <div class="background_images-container">
-              <div class="background_figure"></div>
-              <img
-                class="background_flag_img"
-                src="src/imgs/directions-section/flags-back 1.svg" />
-            </div>
+        <div class="directions-section_content">
+          <div class="directions-section_text">
+            <h3
+              class="font-size-lg font-family-standard font-weight-700 font-color-orange">
+              Направления
+            </h3>
+            <p
+              class="font-size-smd font-family-standard font-weight-300 font-color-grey">
+              Мы не продаем туры<br />
+              и ничего не рекламируем.<br />
+              Люди сами пишут о странах,<br />
+              куда хотели бы отправиться<br />
+              и чем можно там заняться.
+            </p>
           </div>
-
-          <div class="directions-section_content">
-            <div class="directions-section_text">
-              <h3
-                class="font-size-lg font-family-standard font-weight-700 font-color-orange">
-                Направления
-              </h3>
-              <p
-                class="font-size-smd font-family-standard font-weight-300 font-color-grey">
-                Мы не продаем туры<br />
-                и ничего не рекламируем.<br />
-                Люди сами пишут о странах,<br />
-                куда хотели бы отправиться<br />
-                и чем можно там заняться.
-              </p>
-            </div>
-            <div class="directions-section_cards">
-              <div class="directions-section_card">
-                <div class="card_image thailand-bg"></div>
-                <div class="card_content">
-                  <div class="card_flag thailand-flag"></div>
-                  <div class="country-text">
-                    <p
-                      class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
-                      Таиланд
-                    </p>
-                    <p
-                      class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
-                      Джунгли зовут!
-                    </p>
-                  </div>
+          <div class="directions-section_cards">
+            <div class="directions-section_card">
+              <div class="card_image thailand-bg"></div>
+              <div class="card_content">
+                <div class="card_flag thailand-flag"></div>
+                <div class="country-text">
                   <p
-                    class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
-                    18321
+                    class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
+                    Таиланд
+                  </p>
+                  <p
+                    class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
+                    Джунгли зовут!
                   </p>
                 </div>
-              </div>
-              <div class="directions-section_card">
-                <div class="card_image france-bg"></div>
-                <div class="card_content">
-                  <div class="card_flag france-flag"></div>
-                  <div class="country-text">
-                    <p
-                      class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
-                      Франция
-                    </p>
-                    <p
-                      class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
-                      Трэ бьен, манифик!
-                    </p>
-                  </div>
-                  <p
-                    class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
-                    12518
-                  </p>
-                </div>
-              </div>
-              <div class="directions-section_card">
-                <div class="card_image czech-bg"></div>
-                <div class="card_content">
-                  <div class="card_flag czech-flag"></div>
-                  <div class="country-text">
-                    <p
-                      class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
-                      Чехия
-                    </p>
-                    <p
-                      class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
-                      Закоулки старой Европы
-                    </p>
-                  </div>
-                  <p
-                    class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
-                    5326
-                  </p>
-                </div>
-                <div class="card-fade"></div>
+                <p
+                  class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
+                  18321
+                </p>
               </div>
             </div>
-            <div class="directions-section_button">
-              <button
-                class="standard-btn btn-bg-color--yellow button font-size-md">
-                <p class="font-family-standard font-weight-700">Показать все</p>
-                <img src="src/imgs/buttons/Polygon 1.svg" />
-              </button>
+            <div class="directions-section_card">
+              <div class="card_image france-bg"></div>
+              <div class="card_content">
+                <div class="card_flag france-flag"></div>
+                <div class="country-text">
+                  <p
+                    class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
+                    Франция
+                  </p>
+                  <p
+                    class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
+                    Трэ бьен, манифик!
+                  </p>
+                </div>
+                <p
+                  class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
+                  12518
+                </p>
+              </div>
+            </div>
+            <div class="directions-section_card">
+              <div class="card_image czech-bg"></div>
+              <div class="card_content">
+                <div class="card_flag czech-flag"></div>
+                <div class="country-text">
+                  <p
+                    class="country-name font-family-standard font-size-md3 font-color-black font-weight-700">
+                    Чехия
+                  </p>
+                  <p
+                    class="country-description font-family-standard font-size-xxs font-color-special-grey font-weight-500 font-opacity-03">
+                    Закоулки старой Европы
+                  </p>
+                </div>
+                <p
+                  class="user-views font-family-standard font-size-xxs font-color-blue-op03 font-weight-500">
+                  5326
+                </p>
+              </div>
+              <div class="card-fade"></div>
             </div>
           </div>
-        </section>
+          <div class="directions-section_button">
+            <button
+              class="standard-btn btn-bg-color--yellow button font-size-md">
+              <p class="font-family-standard font-weight-700">Показать все</p>
+              <img src="src/imgs/buttons/Polygon 1.svg" />
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="companions-section">
+      <section class="companions-section">
+        <div class="background_header background_color--blue"></div>
+        <div class="background_color--blue background">
+          <div class="companion-background_images-container">
+            <div class="companions-blue-block"></div>
+            <img
+              class="companions-women-bg-img"
+              src="/src/imgs/companions-section/rogovaya-back-desktop.svg" />
+            <img
+              class="companions-men-bg-img"
+              src="/src/imgs/companions-section/smolov-back-desktop.svg" />
+          </div>
+        </div>
+        <div class="companions-section_content">
+          <div class="companions-section_text">
+            <h3
+              class="font-family-standard font-size-lg font-color-orange font-weight-700">
+              Попутчики
+            </h3>
+            <p
+              class="font-family-standard font-size-smd font-color-white font-weight-300">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+            </p>
+            <p
+              class="font-family-standard font-size-smd font-color-white font-weight-700">
+              Теперь можно легко найти единомышленников!
+            </p>
+          </div>
+          <div class="companions-section_cards">
+            <div class="companion-card">
+              <img
+                class="companion-card_image"
+                src="/src/imgs/companions-section/Layer 5 1.svg" />
+              <div class="companion-card_content">
+                <div class="companion-card-flags">
+                  <img class="card-flag" src="src/imgs/flags/Sri-Lanka 1.svg" />
+                  <img class="card-flag" src="src/imgs/flags/Thailand 1.svg" />
+                  <img
+                    class="card-flag"
+                    src="src/imgs/flags/Seychelles 1.svg" />
+                </div>
+                <h4
+                  class="companion-card_name companion-card_name-1 font-family-standard font-size-md3 font-weight-700 font-color-blue3">
+                  Таня Фирсова
+                </h4>
+                <p
+                  class="companion-card_tags font-color-special-grey font-family-standard font-size-xxs2 font-weight-400">
+                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+                </p>
+                <div class="companion-card_vehicles">
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_plane.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_bus.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_bicycle.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_run.svg" />
+                </div>
+              </div>
+              <img
+                class="companion-card_progress-bar"
+                src="/src/imgs/companions-section/mark1.svg" />
+            </div>
+            <div class="companion-card">
+              <img
+                class="companion-card_image"
+                src="/src/imgs/companions-section/demin-desktop 2.svg" />
+              <div class="companion-card_content">
+                <div class="companion-card-flags">
+                  <img class="card-flag" src="src/imgs/flags/Belgium.svg" />
+                  <img class="card-flag" src="src/imgs/flags/Czech 2.svg" />
+                </div>
+                <h4
+                  class="companion-card_name companion-card_name-2 font-family-standard font-size-md3 font-weight-700 font-color-blue3">
+                  Петя Демин
+                </h4>
+                <p
+                  class="companion-card_tags font-color-special-grey font-family-standard font-size-xxs2 font-weight-400">
+                  #бургер #бар #футбол #концерт #крафт
+                </p>
+                <div class="companion-card_vehicles">
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_plane.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_bus2.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_bicycle.svg" />
+                  <img
+                    class="companion-card_vehicle"
+                    src="/src/imgs/companions-section/vehicles/icon_run2.svg" />
+                </div>
+              </div>
+              <img
+                class="companion-card_progress-bar"
+                src="/src/imgs/companions-section/mark2.svg" />
+            </div>
+          </div>
+          <div class="companions-section_button">
+            <button
+              class="standard-btn btn-bg-color--yellow btn-bg-color--yellow button font-size-md">
+              <p class="font-family-standard font-weight-700">Показать всех</p>
+              <img src="src/imgs/buttons/Polygon 1.svg" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="business-plans-section">
+        <div class="background_header background_color--white"></div>
+        <div class="background_color--white background">
+          <div class="business-plans-background_images-container">
+            <div class="business-plans_bg-block"></div>
+          </div>
+        </div>
+        <div class="business-plans-section_content">
+          <div class="business-plans_caption">
+            <h3
+              class="font-family-standard font-size-lg font-color-orange font-weight-700">
+              Добавьте свой профиль
+            </h3>
+          </div>
+          <img
+            class="business-plans_image"
+            src="/src/imgs/business-plans-section/rates.svg" />
+          <div
+            class="business-plans_table font-family-standard font-size-xs font-color-special-grey font-weight-300">
+            <div class="business-plans_table-row">
+              <div class="business-plans_table-text-container">
+                <p>Базовое размещение</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="business-plans_table-step-number">
+                <p class="font-color-white font-weight-400">1</p>
+              </div>
+            </div>
+            <div class="business-plans_table-row">
+              <div class="business-plans_table-text-container">
+                <p>Вывод на первых позициях</p>
+                <p>99 руб./мес</p>
+              </div>
+              <div class="business-plans_table-step-number">
+                <p class="font-color-white font-weight-400">2</p>
+              </div>
+            </div>
+            <div class="business-plans_table-row">
+              <div class="business-plans_table-text-container">
+                <p>Кастомный цвет карточки</p>
+                <p>59 руб./мес</p>
+              </div>
+              <div class="business-plans_table-step-number">
+                <p class="font-color-white font-weight-400">3</p>
+              </div>
+            </div>
+          </div>
+          <div class="business-plans_button-container">
+            <button
+              class="business-plans_button standard-btn button btn-bg-color--white font-color-blue4 font-weight-700 font-family-standard font-size-md4">
+              Показать тарифы для бизнеса
+            </button>
+          </div>
+          <img
+            class="business-plans_icon"
+            src="/src/imgs/business-plans-section/business rates link (1).svg" />
+        </div>
+      </section>
+      <section class="contacts-section">
+        <div class="contacts-section_visible-part">
           <div class="background_header background_color--blue"></div>
-          <div class="background_color--blue background">
-            <div class="companion-background_images-container">
-              <div class="companions-blue-block"></div>
-              <img
-                class="companions-women-bg-img"
-                src="/src/imgs/companions-section/rogovaya-back-desktop.svg" />
-              <img
-                class="companions-men-bg-img"
-                src="/src/imgs/companions-section/smolov-back-desktop.svg" />
-            </div>
+          <div
+            class="background_color--blue background contacts-1-gackground"></div>
+          <div class="contacts-section_content">
+            <h3
+              class="contacts-section_title font-color-orange font-size-lg font-family-standard font-weight-700"
+              onclick="handleIsInterested()">
+              Заинтересовались?
+            </h3>
           </div>
-          <div class="companions-section_content">
-            <div class="companions-section_text">
-              <h3
-                class="font-family-standard font-size-lg font-color-orange font-weight-700">
-                Попутчики
-              </h3>
+        </div>
+        <div
+          class="contacts-section_hidden-part disabled-if-not-interested--block">
+          <div class="background background_color--blue"></div>
+          <div class="contacts-section_content">
+            <div class="contacts-section-text">
               <p
-                class="font-family-standard font-size-smd font-color-white font-weight-300">
-                Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-                Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-              </p>
-              <p
-                class="font-family-standard font-size-smd font-color-white font-weight-700">
-                Теперь можно легко найти единомышленников!
+                class="font-size-smd font-family-standard font-color-white font-weight-300">
+                Зарегистрируйтесь,<br class="only-mobile" />
+                это быстро и бесплатно!<br />
+                Уже зарегистрированы? Тогда<br class="only-mobile" />
+                скорее
+                <a class="font-color-yellow text-decoration-underline"
+                  >авторизуйтесь</a
+                >.
               </p>
             </div>
-            <div class="companions-section_cards">
-              <div class="companion-card">
-                <img
-                  class="companion-card_image"
-                  src="/src/imgs/companions-section/Layer 5 1.svg" />
-                <div class="companion-card_content">
-                  <div class="companion-card-flags">
-                    <img
-                      class="card-flag"
-                      src="src/imgs/flags/Sri-Lanka 1.svg" />
-                    <img
-                      class="card-flag"
-                      src="src/imgs/flags/Thailand 1.svg" />
-                    <img
-                      class="card-flag"
-                      src="src/imgs/flags/Seychelles 1.svg" />
-                  </div>
-                  <h4
-                    class="companion-card_name companion-card_name-1 font-family-standard font-size-md3 font-weight-700 font-color-blue3">
-                    Таня Фирсова
-                  </h4>
-                  <p
-                    class="companion-card_tags font-color-special-grey font-family-standard font-size-xxs2 font-weight-400">
-                    #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-                  </p>
-                  <div class="companion-card_vehicles">
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_plane.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_bus.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_bicycle.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_run.svg" />
-                  </div>
-                </div>
-                <img
-                  class="companion-card_progress-bar"
-                  src="/src/imgs/companions-section/mark1.svg" />
-              </div>
-              <div class="companion-card">
-                <img
-                  class="companion-card_image"
-                  src="/src/imgs/companions-section/demin-desktop 2.svg" />
-                <div class="companion-card_content">
-                  <div class="companion-card-flags">
-                    <img class="card-flag" src="src/imgs/flags/Belgium.svg" />
-                    <img class="card-flag" src="src/imgs/flags/Czech 2.svg" />
-                  </div>
-                  <h4
-                    class="companion-card_name companion-card_name-2 font-family-standard font-size-md3 font-weight-700 font-color-blue3">
-                    Петя Демин
-                  </h4>
-                  <p
-                    class="companion-card_tags font-color-special-grey font-family-standard font-size-xxs2 font-weight-400">
-                    #бургер #бар #футбол #концерт #крафт
-                  </p>
-                  <div class="companion-card_vehicles">
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_plane.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_bus2.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_bicycle.svg" />
-                    <img
-                      class="companion-card_vehicle"
-                      src="/src/imgs/companions-section/vehicles/icon_run2.svg" />
-                  </div>
-                </div>
-                <img
-                  class="companion-card_progress-bar"
-                  src="/src/imgs/companions-section/mark2.svg" />
-              </div>
-            </div>
-            <div class="companions-section_button">
+            <div class="contacts-section_email-block">
+              <input
+                class="contacts-section_email-input font-size-md font-color-special-grey font-family-standard font-weight-700"
+                placeholder="E-mail"
+                type="email" />
               <button
-                class="standard-btn btn-bg-color--yellow btn-bg-color--yellow button font-size-md">
-                <p class="font-family-standard font-weight-700">
-                  Показать всех
-                </p>
+                class="contacts-section_send-email-button standard-btn button btn-bg-color--yellow font-color-blue4 font-weight-700 font-family-standard font-size-md4">
+                <p class="desktop-only">Регистрация</p>
                 <img src="src/imgs/buttons/Polygon 1.svg" />
               </button>
             </div>
-          </div>
-        </section>
-
-        <section class="business-plans-section">
-          <div class="background_header background_color--white"></div>
-          <div class="background_color--white background">
-            <div class="business-plans-background_images-container">
-              <div class="business-plans_bg-block"></div>
+            <div class="contacts-section_text-2">
+              <p
+                class="font-size-smd font-family-standard font-color-white font-weight-300">
+                Остались вопросы? <br class="only-mobile" />
+                Мы с радостью на них ответим!
+              </p>
             </div>
-          </div>
-          <div class="business-plans-section_content">
-            <div class="business-plans_caption">
-              <h3
-                class="font-family-standard font-size-lg font-color-orange font-weight-700">
-                Добавьте свой профиль
-              </h3>
-            </div>
-            <img
-              class="business-plans_image"
-              src="/src/imgs/business-plans-section/rates.svg" />
-            <div
-              class="business-plans_table font-family-standard font-size-xs font-color-special-grey font-weight-300">
-              <div class="business-plans_table-row">
-                <div class="business-plans_table-text-container">
-                  <p>Базовое размещение</p>
-                  <p>Бесплатно</p>
-                </div>
-                <div class="business-plans_table-step-number">
-                  <p class="font-color-white font-weight-400">1</p>
-                </div>
-              </div>
-              <div class="business-plans_table-row">
-                <div class="business-plans_table-text-container">
-                  <p>Вывод на первых позициях</p>
-                  <p>99 руб./мес</p>
-                </div>
-                <div class="business-plans_table-step-number">
-                  <p class="font-color-white font-weight-400">2</p>
-                </div>
-              </div>
-              <div class="business-plans_table-row">
-                <div class="business-plans_table-text-container">
-                  <p>Кастомный цвет карточки</p>
-                  <p>59 руб./мес</p>
-                </div>
-                <div class="business-plans_table-step-number">
-                  <p class="font-color-white font-weight-400">3</p>
-                </div>
-              </div>
-            </div>
-            <div class="business-plans_button-container">
-              <button
-                class="business-plans_button standard-btn button btn-bg-color--white font-color-blue4 font-weight-700 font-family-standard font-size-md4">
-                Показать тарифы для бизнеса
-              </button>
-            </div>
-            <img
-              class="business-plans_icon"
-              src="/src/imgs/business-plans-section/business rates link (1).svg" />
-          </div>
-        </section>
-        <section class="contacts-section">
-          <div class="contacts-section_visible-part">
-            <div class="background_header background_color--blue"></div>
-            <div
-              class="background_color--blue background contacts-1-gackground"></div>
-            <div class="contacts-section_content">
-              <h3
-                class="contacts-section_title font-color-orange font-size-lg font-family-standard font-weight-700"
-                onclick="handleIsInterested()">
-                Заинтересовались?
-              </h3>
-            </div>
-          </div>
-          <div class="contacts-section_hidden-part disabled-if-not-interested">
-            <div class="background background_color--blue"></div>
-            <div class="contacts-section_content">
-              <div class="contacts-section-text">
-                <p
-                  class="font-size-smd font-family-standard font-color-white font-weight-300">
-                  Зарегистрируйтесь,<br class="only-mobile" />
-                  это быстро и бесплатно!<br />
-                  Уже зарегистрированы? Тогда<br class="only-mobile" />
-                  скорее
-                  <a class="font-color-yellow text-decoration-underline"
-                    >авторизуйтесь</a
-                  >.
-                </p>
-              </div>
-              <div class="contacts-section_email-block">
-                <input
-                  class="contacts-section_email-input font-size-md font-color-special-grey font-family-standard font-weight-700"
-                  placeholder="E-mail"
-                  type="email" />
-                <button
-                  class="contacts-section_send-email-button standard-btn button btn-bg-color--yellow font-color-blue4 font-weight-700 font-family-standard font-size-md4">
-                  <p class="desktop-only">Регистрация</p>
-                  <img src="src/imgs/buttons/Polygon 1.svg" />
-                </button>
-              </div>
-              <div class="contacts-section_text-2">
-                <p
-                  class="font-size-smd font-family-standard font-color-white font-weight-300">
-                  Остались вопросы? <br class="only-mobile" />
-                  Мы с радостью на них ответим!
-                </p>
-              </div>
-              <div class="contacts-section_contacts">
-                <div class="contact-block">
-                  <img
-                    class="contact-logo"
-                    src="src/imgs/modal-menu/contacts_icon_phone.svg" />
-                  <p
-                    class="font-color-yellow font-family-standard font-weight-700 font-size-xs">
-                    8 800 555-86-28
-                  </p>
-                </div>
-                <div class="contact-block">
-                  <img
-                    class="contact-logo"
-                    src="src/imgs/modal-menu/contacts_icon_mail.svg" />
-                  <p
-                    class="font-color-yellow font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
-                    mail@htmlacademy.ru
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="disabled-if-not-interested">
-          <section class="route-section">
-            <div class="background_header background_color--yellow"></div>
-            <div class="background background_color--yellow"></div>
-            <div class="routes-content">
-              <div class="routes_address-container">
+            <div class="contacts-section_contacts">
+              <div class="contact-block">
                 <img
                   class="contact-logo"
-                  src="src/imgs/routes-section/map_mark.svg" />
+                  src="src/imgs/modal-menu/contacts_icon_phone.svg" />
                 <p
-                  class="font-color-blue3 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
-                  ул. Большая Конюшенная, 19/8
+                  class="font-color-yellow font-family-standard font-weight-700 font-size-xs">
+                  8 800 555-86-28
                 </p>
               </div>
-              <div class="routes_button-container">
-                <button
-                  class="standard-btn button btn-bg-color--yellow font-color-blue4 font-weight-700 font-family-standard font-size-md4 btn-blue-border-3px">
-                  <p>Проложить маршрут</p>
-                  <img src="src/imgs/buttons/Polygon 1.svg" />
-                </button>
+              <div class="contact-block">
+                <img
+                  class="contact-logo"
+                  src="src/imgs/modal-menu/contacts_icon_mail.svg" />
+                <p
+                  class="font-color-yellow font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
+                  mail@htmlacademy.ru
+                </p>
               </div>
             </div>
-          </section>
-          <section class="map-section">
-            <iframe
-              class="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.8711141351873!2d30.32134849859824!3d59.938359810465265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1700472485322!5m2!1sru!2sru"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-          <footer class="footer">
-            <div class="footer_logo">
-              <img
-                class="main-logo--mobile"
-                src="src/imgs/header/logo_mobile_blue.svg" />
-              <img
-                class="main-logo--tablet"
-                src="src/imgs/header/logo_tablet_blue.svg" />
-            </div>
-            <div class="footer_socials">
-              <img class="footer_socilal" src="/src/imgs/footer/facebook.svg" />
-              <img
-                class="footer_socilal"
-                src="/src/imgs/footer/vkontakte.svg" />
-              <img class="footer_socilal" src="/src/imgs/footer/insta.svg" />
-            </div>
-            <div
-              class="footer_developers font-size-xxs font-family-standard font-color-special-grey font-weight-400">
-              <p>Разработано</p>
-              <img src="/src/imgs/footer/Лого_html 1.svg" />
-            </div>
-          </footer>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+      <div class="disabled-if-not-interested--block">
+        <section class="route-section">
+          <div class="background_header background_color--yellow"></div>
+          <div class="background background_color--yellow"></div>
+          <div class="routes-content">
+            <div class="routes_address-container">
+              <img
+                class="contact-logo"
+                src="src/imgs/routes-section/map_mark.svg" />
+              <p
+                class="font-color-blue3 font-family-standard font-weight-700 font-size-xs text-transform-uppercase">
+                ул. Большая Конюшенная, 19/8
+              </p>
+            </div>
+            <div class="routes_button-container">
+              <button
+                class="standard-btn button btn-bg-color--yellow font-color-blue4 font-weight-700 font-family-standard font-size-md4 btn-blue-border-3px">
+                <p>Проложить маршрут</p>
+                <img src="src/imgs/buttons/Polygon 1.svg" />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="map-section">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.8711141351873!2d30.32134849859824!3d59.938359810465265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1700472485322!5m2!1sru!2sru"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </div>
+    </main>
+    <footer class="footer disabled-if-not-interested--flex">
+      <div class="footer_logo">
+        <img
+          class="main-logo--mobile"
+          src="src/imgs/header/logo_mobile_blue.svg" />
+        <img
+          class="main-logo--tablet"
+          src="src/imgs/header/logo_tablet_blue.svg" />
+      </div>
+      <div class="footer_socials">
+        <img class="footer_socilal" src="/src/imgs/footer/facebook.svg" />
+        <img class="footer_socilal" src="/src/imgs/footer/vkontakte.svg" />
+        <img class="footer_socilal" src="/src/imgs/footer/insta.svg" />
+      </div>
+      <div
+        class="footer_developers font-size-xxs font-family-standard font-color-special-grey font-weight-400">
+        <p>Разработано</p>
+        <img src="/src/imgs/footer/Лого_html 1.svg" />
+      </div>
+    </footer>
   </body>
 </html>
