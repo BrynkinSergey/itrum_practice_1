@@ -34,10 +34,12 @@
   justify-content: space-around;
 }
 
-.modal-menu_caption {
+.modal-menu_titles {
   height: 105px;
   width: 193px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-menu_contact-section {

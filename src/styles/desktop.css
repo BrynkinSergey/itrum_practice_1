@@ -330,11 +330,11 @@
   .card_flag {
     position: absolute;
 
-    left: 25px;
-    top: -12px;
+    left: 358px;
+    top: 23px;
 
-    width: 35px;
-    height: 24px;
+    width: 70px;
+    height: 47px;
   }
 
   .card_content {

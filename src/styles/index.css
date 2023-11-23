@@ -28,7 +28,6 @@
   z-index: 500;
 
   width: 100%;
-  /* padding: 0 25px; */
 }
 
 .header_buttons {
@@ -57,7 +56,6 @@
 }
 
 .header-content {
-  /* width: 100%; */
   height: 100%;
   max-width: 1320px;
   margin: auto;
@@ -71,6 +69,13 @@
   display: block;
   width: 25px;
   height: 20px;
+}
+
+.header_navlink,
+.auth-link,
+.footer_socilal,
+.modal-menu_caption {
+  cursor: pointer;
 }
 
 main {
@@ -306,6 +311,9 @@ main {
 
   width: 35px;
   height: 24px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card_content {
@@ -703,6 +711,7 @@ main {
 }
 
 .contacts-section_title {
+  cursor: pointer;
   margin-top: 76px;
 }
 

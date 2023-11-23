@@ -125,4 +125,9 @@ const clickMenuButtonHandler = () => {
   }
 };
 
+const scrollToSectionAndCloseModal = (section) => {
+  scrollToSection(section);
+  clickMenuButtonHandler();
+};
+
 window.addEventListener("scroll", scrollHandler);

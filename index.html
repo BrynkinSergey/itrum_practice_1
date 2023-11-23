@@ -59,10 +59,23 @@
     </header>
     <section class="modal-menu">
       <div class="modal-menu_content">
-        <h2
-          class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl">
-          О сервисе Направления Попутчики
-        </h2>
+        <div class="modal-menu_titles">
+          <h2
+            class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl"
+            onclick="scrollToSectionAndCloseModal('aboutService')">
+            О сервисе
+          </h2>
+          <h2
+            class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl"
+            onclick="scrollToSectionAndCloseModal('directions')">
+            Направления
+          </h2>
+          <h2
+            class="modal-menu_caption font-color-blue2 font-family-standard font-weight-500 font-size-xl"
+            onclick="scrollToSectionAndCloseModal('companions')">
+            Попутчики
+          </h2>
+        </div>
         <button
           class="modal-menu_auth-button-mobile button auth-button--large button-width-270 button-height-50"></button>
         <div class="modal-menu_contact-sections-wrapper">
@@ -530,7 +543,7 @@
                 это быстро и бесплатно!<br />
                 Уже зарегистрированы? Тогда<br class="only-mobile" />
                 скорее
-                <a class="font-color-yellow text-decoration-underline"
+                <a class="auth-link font-color-yellow text-decoration-underline"
                   >авторизуйтесь</a
                 >.
               </p>
